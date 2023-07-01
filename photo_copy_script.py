@@ -5,7 +5,7 @@ from datetime import datetime
 def copy_images(src, dst):
     for root, dirs, files in os.walk(src):
         for file in files:
-            if file.endswith(".jpg") or file.endswith(".jpeg"):
+            if file.endswith(".jpg") or file.endswith(".jpg"):
                 file_path = os.path.join(root, file)
                 creation_time = os.path.getctime(file_path)
                 year = datetime.fromtimestamp(creation_time).year
